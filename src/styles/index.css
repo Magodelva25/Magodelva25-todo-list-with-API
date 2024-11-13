@@ -1,4 +1,42 @@
+/* .container {
+} */
 
+.wrapper {
+
+    background-color: aquamarine;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-wrap: wrap;
+    text-align: center;
+
+}
+
+h1 {
+
+    font-size: 5rem;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+input {
+    
+    width: 350px;
+    height: 60px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+input:focus-visible {
+    
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #f0f8ff;
+}
 /* 
 
     You can write your own styles here...
