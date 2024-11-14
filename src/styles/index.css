@@ -1,14 +1,26 @@
-/* .container {
-} */
+.container-fluid {
+
+    padding: 0;
+
+} 
 
 .wrapper {
 
     background-color: aquamarine;
-    height: 100vh;
+    height:100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+}
+
+.input-hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
 }
 
@@ -40,10 +52,10 @@ input:focus-visible {
 .cardBoard {
 
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
-
+    margin-top: 5rem;
+    gap: 20px;
 }
 /* 
 

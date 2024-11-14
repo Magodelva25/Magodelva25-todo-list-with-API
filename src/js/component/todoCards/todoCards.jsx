@@ -25,12 +25,10 @@ export const TodoCard = (props) => {
                 </p>
                 <i className="fa-regular fa-pen-to-square edit-icon" onClick={() => setActive(true)}></i>
                 </div> 
-                <div className="input-area" onClick={() => setActive(true)}>
-                    <textarea className="text-area" maxLength="140" placeholder="Describe tu tarea" contentEditable={active} onKeyDown = {(e) => {
-                  e.key === "Enter" ? setActive(false) : null;
-                  }}></textarea>
+                <div className="input-area">
+                    <textarea className="text-area" maxLength="140" placeholder="Describe tu tarea" contentEditable={active} ></textarea>
                 </div>
-                <div className="delete-icon"><i className="fa fa-trash"></i></div>
+                <div className="delete-icon"><i className="fa fa-trash" onClick={props.function}></i></div>
             </div>
         </div>
     )

@@ -9,23 +9,27 @@ export const Home = () => {
 	return (
 		<div className="container-fluid">
 			<div className="wrapper">
+				<div className="input-hero">
 				<h1>Mi lista de tareas</h1>
 				<h3>{todosList.length} tasks</h3>
-				<input 
-				type="text"
-				onChange={(e) => setInputVale(e.target.value)}
-				placeholder="New to do task"
-				onKeyDown = {(e) => {
-					if(e.key === "Enter") {
-						setTodos(todosList.concat(inputValue));
-					}
-				}}
-				value={inputValue}>
-				</input>
+					<div className="input-bar">
+						<input 
+							type="text"
+							onChange={(e) => setInputVale(e.target.value)}
+							placeholder="New to do task"
+							onKeyDown = {(e) => {
+							if(e.key === "Enter") {
+								setTodos(todosList.concat(inputValue));
+							}
+							}}
+							value={inputValue}>
+						</input>
+					</div>
+				</div>
 				<div className="Todo-List">
 					<div className="cardBoard">
 						{ todosList.map((item, index) => (
-							<TodoCard title={item}
+							<TodoCard title={item} function={() => setTodos(todosList.filter((item, currentIndex) => index != currentIndex))}
 							task={item} key={""}/> ))
 						}
 					</div>	
@@ -36,4 +40,3 @@ export const Home = () => {
 }
 
 
-/* <i className="fa fa-trash" onClick = {() => setTodos(todosList.filter((item, currentIndex) => index != currentIndex))} </i></i> */
