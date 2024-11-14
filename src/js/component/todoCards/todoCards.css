@@ -1,0 +1,79 @@
+p {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.card-container {
+
+    width: 300px;
+    height: auto;
+    background-color:beige;
+    border-radius: 20px
+
+
+}
+
+.content {
+
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.card-header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit-icon {
+
+
+
+}
+
+
+.content > p {
+
+    font-size: 1.4rem;
+    font-weight: 500;
+
+}
+
+p:focus-visible {
+
+    outline: none;
+    box-shadow: none;
+
+}
+
+.input-area {
+
+    width: 100%;
+}
+
+.text-area {
+    height: 150px;
+    width: 100%;
+    margin-top: 0;
+    border-style: none;
+    background-color: beige;
+    resize: none;
+}
+
+textarea:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+.delete-icon {
+    align-self: flex-end;
+}
+
+

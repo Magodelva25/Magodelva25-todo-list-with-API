@@ -9,7 +9,6 @@
     align-items: center;
     flex-direction: column;
     text-wrap: wrap;
-    text-align: center;
 
 }
 
@@ -36,6 +35,15 @@ input:focus-visible {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     background-color: #f0f8ff;
+}
+
+.cardBoard {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
 }
 /* 
 

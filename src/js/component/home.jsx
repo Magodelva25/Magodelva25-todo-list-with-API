@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { TodoCard } from "./todoCards/todoCards.jsx";
 
 export const Home = () => {
 
@@ -19,16 +20,20 @@ export const Home = () => {
 						setTodos(todosList.concat(inputValue));
 					}
 				}}
-				value={inputValue}></input>
+				value={inputValue}>
+				</input>
 				<div className="Todo-List">
 					<div className="cardBoard">
-						{todosList.map((item, index) => (
-						<todoCard task = {item} key={""} /> <i className="fa fa-trash" onClick = {() => setTodos(todosList.filter((item, currentIndex) => index != currentIndex))} </i>
-						 
-						))}
+						{ todosList.map((item, index) => (
+							<TodoCard title={item}
+							task={item} key={""}/> ))
+						}
 					</div>	
 				</div>
 			</div>
 		</div>
 	);
 }
+
+
+/* <i className="fa fa-trash" onClick = {() => setTodos(todosList.filter((item, currentIndex) => index != currentIndex))} </i></i> */
