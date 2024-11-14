@@ -16,7 +16,7 @@ export const Home = () => {
 						<input 
 							type="text"
 							onChange={(e) => setInputVale(e.target.value)}
-							placeholder="New to do task"
+							placeholder="New Task"
 							onKeyDown = {(e) => {
 							if(e.key === "Enter") {
 								setTodos(todosList.concat(inputValue));

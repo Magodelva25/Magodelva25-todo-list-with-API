@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 import "./todoCards.css";
 
-// onClick={() => setActive(true)}
-// const [value, setInputVale] = useState("active");
-// onKeyDown = {(e) => {
-//     e.key === "Enter" ? setInputVale("false") : setInputVale("true")
-// }}
-
 
 export const TodoCard = (props) => {
     
@@ -21,7 +15,7 @@ export const TodoCard = (props) => {
                 <div className="card-header">
                 <p contentEditable={active} maxLength="40" onKeyDown = {(e) => {
                   e.key === "Enter" ? setActive(false) : null;
-                  }}>{props.title}
+                  }} className={`title ${active ? "editable" : ""}`}>{props.title}
                 </p>
                 <i className="fa-regular fa-pen-to-square edit-icon" onClick={() => setActive(true)}></i>
                 </div> 
