@@ -10,13 +10,14 @@ export const Home = () => {
 		<div className="container-fluid">
 			<div className="wrapper">
 				<div className="input-hero">
-				<h1>Mi lista de tareas</h1>
+				<h1>Cosas para hoy</h1>
 				<h3>{todosList.length} tasks</h3>
 					<div className="input-bar">
 						<input 
 							type="text"
 							onChange={(e) => setInputVale(e.target.value)}
 							placeholder="New Task"
+							maxLength={40}
 							onKeyDown = {(e) => {
 							if(e.key === "Enter") {
 								setTodos(todosList.concat(inputValue));

@@ -1,3 +1,5 @@
+/* reseteo */
+
 p {
 
     margin: 0;
@@ -5,7 +7,7 @@ p {
 
 }
 
-
+/* Cuerpo de la carta */
 .card-container {
 
     max-width: 420px;
@@ -26,6 +28,8 @@ p {
     border: 1px solid black;
 }
 
+/* Contenido de la carta */
+
 .content {
 
     position: relative;
@@ -44,9 +48,7 @@ p {
 }
 
 .edit-icon {
-
-
-
+    color: grey;
 }
 
 
@@ -54,6 +56,8 @@ p {
 
     font-size: 1.4rem;
     font-weight: 500;
+    padding: 2px;
+    border-bottom: 0.5px solid grey;
 
 }
 
@@ -61,12 +65,14 @@ p:focus-visible {
 
     outline: none;
     box-shadow: none;
-
 }
+
+/* area de texto */
 
 .input-area {
 
     width: 100%;
+    padding-top: 1rem;
 }
 
 .text-area {
@@ -76,6 +82,7 @@ p:focus-visible {
     border-style: none;
     background-color: transparent;
     resize: none;
+    opacity: 0.5;
 }
 
 textarea:focus-visible {
@@ -88,8 +95,9 @@ textarea:focus-visible {
     color: rgb(255, 179, 179);
 }
 
-.title.editable {
-    padding: 2px;
+.editable {
     background-color: #f0f0f0;
+    border-bottom: 0.5px solid grey;
   }
+
 

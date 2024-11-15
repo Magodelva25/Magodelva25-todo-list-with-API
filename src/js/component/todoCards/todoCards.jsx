@@ -5,7 +5,7 @@ import "./todoCards.css";
 export const TodoCard = (props) => {
     
 
-    const [active, setActive] = useState("false");
+    const [active, setActive] = useState("");
     
     
     
@@ -15,12 +15,12 @@ export const TodoCard = (props) => {
                 <div className="card-header">
                 <p contentEditable={active} maxLength="40" onKeyDown = {(e) => {
                   e.key === "Enter" ? setActive(false) : null;
-                  }} className={`title ${active ? "editable" : ""}`}>{props.title}
+                  }} className={`${active ? "editable" : ""}`}>{props.title}
                 </p>
                 <i className="fa-regular fa-pen-to-square edit-icon" onClick={() => setActive(true)}></i>
                 </div> 
                 <div className="input-area">
-                    <textarea className="text-area" maxLength="140" placeholder="Describe tu tarea" contentEditable={active} ></textarea>
+                    <textarea className="text-area" maxLength="250" placeholder="Describe tu tarea" contentEditable={active} ></textarea>
                 </div>
                 <div className="delete-icon"><i className="fa fa-trash" onClick={props.function}></i></div>
             </div>
