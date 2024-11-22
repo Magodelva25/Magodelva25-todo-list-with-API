@@ -47,6 +47,33 @@ input:focus-visible {
     border: 1 solid black;
 }
 
+.reset-button {
+
+    width: auto;
+    padding-inline: 1.5rem;
+    padding-block: 0.77rem;
+    margin-left: 15px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 0;
+    font-weight: 500;
+
+}
+
+.reset-button:hover {
+     background-color: rgb(255, 241, 42);
+     color: rgb(0, 0, 0);
+
+}
+
+.reset-button:disabled {
+    opacity: 0.1;
+    pointer-events: none;
+    cursor: not-allowed;
+
+}
+
 .Todo-List {
 
     padding: 2rem;
