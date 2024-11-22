@@ -5,8 +5,6 @@ export const Home = () => {
 
 	const [inputValue, setInputValue] = useState("");
 	const [todos, setTodos] = useState ([]);
-	const [active, setActive] = useState ("false");
-
 
 	useEffect(() => {
 		fetch('https://playground.4geeks.com/todo/users/Magodelva')
